@@ -34,6 +34,3 @@ class XboxLiveApi(object):
         root = self._gamercard_xml_tree(gamertag)
         output_gamertag = root.get('gamertag')
         return output_gamertag != '??????'
-
-api = XboxLiveApi()
-print api.is_gamertag_taken('Chiddy Bang')
