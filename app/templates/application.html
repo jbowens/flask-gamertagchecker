@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            {% block title %}
+            Gamertag Checker - Check the availability of a Xbox Live gamertag
+            {% endblock %}
+        </title>
+        <meta charset="UTF-8">
+        <meta name="description" content="GamertagChecker.com is a utility for checking the availability of a Xbox Live gamertag. It queries Xbox Live servers to determine if a gamertag is taken or available.">
+        <meta name="keywords" content="availability, gamertag, name, username, available, taken, Xbox Live, gamertags, status, search">
+        <meta name="google-site-verification" content="ykAdKrAvBfU_Ym8GSsF4XZgnSGkTktWbxCLr2gjdPv8" />
+        <meta name="y_key" content="c4147156f080931e" />
+        {% block styles %}
+        {% endblock %}
+
+        {% block scripts %}
+            <script type="text/javascript">
+            window.google_analytics_uacct = "UA-1986133-13";
+            </script>
+                <script type="text/javascript">
+
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-1986133-13']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+
+            </script>
+        {% endblock %}
+    </head>
+    <body>
+        <h1>GamertagChecker</h1>
+        {% block content %}{% endblock %}
+    </body>
+</html>
