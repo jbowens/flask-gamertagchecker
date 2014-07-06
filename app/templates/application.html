@@ -34,7 +34,15 @@
         {% endblock %}
     </head>
     <body>
-        <h1>GamertagChecker</h1>
-        {% block content %}{% endblock %}
+    <h1 id="masthead"><a href="http://gamertagchecker.com"><img src="http://gamertagchecker.com/images/logo.png" alt="Gamertag Checker" width="542" height="76" border="0" /></a></h1>
+    <div id="page">
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    <div id="footer">
+        <div>GamertagChecker.com is in no way affiliated with Microsoft, Xbox or Xbox Live. Any trademarks are used to the benefit of the trademark owner and with no intention of infringement of the trademark.</div>
+        <div>Brought to you by <a href="http://xboxamerica.com" rel="nofollow">Xbox America</a>.</div>
+    </div>
     </body>
 </html>

@@ -1,4 +1,52 @@
 {% extends 'application.html' %}
 {% block content %}
-<h1>Hello</h1>
+<div id="sponsor">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-8101954213892678";
+    /* GamertagChecker, 160x600, created 7/7/10 */
+    google_ad_slot = "5296733787";
+    google_ad_width = 160;
+    google_ad_height = 600;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+</div>
+
+<h1>Gamertag Availability Checker</h1>
+
+<p>Gamertag Checker is a utility designed to help gamers create new Xbox Live accounts or change their gamertags. Enter a potential gamertag name, click "Check," and we'll tell you the availability of the gamertag. It's much easier to sift through taken and available gamertags through the Gamertag Checker than through your Xbox 360 and its on-screen keyboard. Availability is determined through Xbox.com's own servers.</p>
+
+{% if gamertag %}
+<div id="status">
+    {% if taken %}
+        <div class="failure">Sorry! The gamertag '{{ gamertag }}' is taken.</div>
+    {% else %}
+        <div class="success">Congrats! The gamertag '{{ gamertag }}' is available.</div>
+    {% endif %}
+</div>
+{% endif %}
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8101954213892678";
+/* GamertagChecker Link Unit */
+google_ad_slot = "2201504224";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<form method="post" action="{$website_url}" id="gamertagForm">
+
+<div id="formRow">
+<input type="text" id="gamertagBox" name="gamertag" maxlength="16" /> <input type="image" id="submit" name="submit" src="{$website_url}/images/checkButton.png" alt="Check" />
+</div>
+
+</form>
+
+<div class="clear"></div>
 {% endblock %}

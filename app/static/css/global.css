@@ -1,0 +1,139 @@
+body {
+    background: #333;
+    color: #DDD;
+    margin: 0;
+    font-family: verdana;
+}
+
+a {
+    color: #000;
+}
+
+a.functional
+{
+    text-decoration: none;
+}
+
+#page
+{
+    background: #EEE;
+    color: #111;
+    border: 1px #000 solid;
+    width: 800px;
+    margin: 25px auto 0 auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: .75em;
+}
+
+#content
+{
+    padding: 10px;
+}
+
+h1, h2
+{
+    font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+    margin: 10px 0 10px 0;
+}
+
+h1#masthead
+{
+    margin: 50px auto 0 auto;
+    width: 800px;
+}
+
+p
+{
+    line-height: 2;
+    text-indent: 2em;
+    font-size: 90%;
+}
+
+#sponsor
+{
+    float: left;
+    height: 600px;
+    width: 160px;
+    margin-right: 20px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#gamertagBox
+{
+    width: 16em;
+    height: 26px;
+    border: 1px #333 solid;
+    color: #333;
+    font-size: 130%;
+}
+
+#submit
+{
+    vertical-align: top;
+}
+
+#formRow
+{
+    vertical-align: top;
+    margin: 30px 0 60px 0;
+}
+
+#status
+{
+    height: 60px;
+    text-align: center;
+    margin: 30px 0 0 180px;
+    font-size: 90%;
+}
+
+.success, .failure {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.success
+{
+    background: #6c7f2b;
+    border: 1px #000 solid;
+    color: #EEE;
+    padding: 10px;
+}
+
+.failure
+{
+    background: #67342f;
+    border: 1px #000 solid;
+    color: #EEE;
+    padding: 10px;
+}
+
+.checkInProgress
+{
+    font-size: 60%;
+    padding: 4px;
+}
+
+.gamertagCreatorNotice
+{
+    font-size: 70%;
+}
+
+#footer
+{
+    width: 800px;
+    margin: 5px auto 5px auto;
+    color: #999;
+    font-size: 70%;
+    text-align: center;
+}
+
+    #footer a
+    {
+        color: #BBB;
+    }
